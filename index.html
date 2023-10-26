@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class ="nav_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id ="theme-heading">
+        <form id="main-form" name="mainform">
+            <fieldset>
+                <legend>Personnal Information</legend>
+                <label for="First Name">First Name</label>
+                <input type="text" id ="First Name">
+                <br>
+                <label for="Last Name">Last Name</label>
+                <input type ="text" id ="Last Name">
+                <br>
+                <label for="Email">Email</label>
+                <input type ="email" id ="Email">
+                <br>
+                <label for ="Address">Address</label>
+                <input type ="address" id ="Address">
+                <br>
+                <label for ="City">City</label>
+                <input type ="text" id ="City">
+                <br>
+                <label for ="Province">Province</label>
+                <input type ="text" id ="Province">
+
+                <br>
+                <input type ="radio" name ="Membership" value ="Premium" checked>
+                <label for ="premium">Premium</label>
+                <br>
+                <input type ="radio" name ="Membership" value ="Standard">
+                <label for ="Standard">Standrad</label>
+                <br>
+                <input type ="radio" name ="Membership" value ="Basic">
+                <label for ="Basic">Basic</label>
+                <br>
+
+                <button type = "button" id ="submit" onclick="userForm()">Trigger</button>
+                <button type ="reset" id = "Reset" value ="" onclick="RESET()">Reset</button>
+            </fieldset>
+
+            <button type = "button" id="toggle-theme" onclick="toggleTheme()">Toggle Dark and Light</button>
+            <button type = "button" id="toggle-Blue-Red" onclick="BlueRedToggle()">Toggle Blue to Red</button>
+            <button type = "button" id="Personal-Toggle" onclick ="PersonalToggle()">Toggle Theme</button>
+        </form>
+
+        <div id="output">
+        <!-- I use JS to display directly the output without any other html balise inside this div -->
+        </div>
+    </main>
+    <footer>
+        <p>
+            ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Godfrin Louis
+        </p>
+    </footer>
+       
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

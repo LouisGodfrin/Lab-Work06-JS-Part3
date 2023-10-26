@@ -1,0 +1,50 @@
+
+.nav_bar
+{
+    margin: auto;
+    text-align: center;
+}
+.nav_bar ul li 
+{
+    list-style: none;
+    display: inline;
+    text-transform: bold;
+    margin:3%;
+}
+
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.light-theme {
+    background-color: #fff;
+    color: #333;
+}
+
+.red-theme
+{
+    background-color: #f70707;
+    color: #f5eeee;
+}
+
+.blue-theme
+{
+    background-color: #0723f7;
+    color: #f6f1f1;
+}
+
+
+.pink-theme
+{
+    background-color: #ee04de;
+    color: #333;
+}
+
+
+.green-theme
+{
+    background-color: #2ff707;
+    color: #333;
+}

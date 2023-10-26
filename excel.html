@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Excel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class ="nav_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id = "theme-heading">
+        <form id="main-form" name="mainform">
+            <fieldset>
+                <legend>Calculus</legend>
+                <label for="Numbers">Enter your numbers separated by spaces every two numbers:</label>
+                <input type="text" id ="Numbers" pattern="[0-9]+\s[0-9]+" title="Veuillez entrer deux nombres suivis d'un espace" required>
+                <br>
+                <input type ="radio" name ="Calculus_Function" value ="AutoSum" checked>
+                <label for ="AutoSum">AutoSum</label>
+                <br>
+                <input type ="radio" name ="Calculus_Function" value ="Average">
+                <label for ="Standard">Average</label>
+                <br>
+                <input type ="radio" name ="Calculus_Function" value ="Max">
+                <label for ="Max">Max</label>
+                <br>
+                <input type ="radio" name ="Calculus_Function" value ="Min">
+                <label for ="Min">Min</label>
+                <br>
+                <button type = "button" id ="Calculate" onclick="MyExcelFuns()">Calculate</button>
+            </fieldset>
+
+            <button type = "button" id="toggle-theme" onclick="toggleTheme()">Toggle Dark and Light</button>
+            <button type = "button" id="toggle-Blue-Red" onclick="BlueRedToggle()">Toggle Blue to Red</button>
+            <button type = "button" id="Personal-Toggle" onclick ="PersonalToggle()">Toggle Theme</button>
+        </form>
+
+        <div id="output">
+        <!-- here is where the user should see the result (output) -->
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Godfrin Louis
+        </p>
+    </footer>
+       
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
